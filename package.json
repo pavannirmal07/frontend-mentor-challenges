@@ -1,0 +1,25 @@
+{
+  "name": "frontend-mentor-challenges",
+  "version": "1.0.0",
+  "description": "A collection of my solutions to frontend design challenges, built from scratch to practice UI architecture.",
+  "main": "index.js",
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavannirmal07/frontend-mentor-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pavannirmal07/frontend-mentor-challenges/issues"
+  },
+  "homepage": "https://github.com/pavannirmal07/frontend-mentor-challenges#readme",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
