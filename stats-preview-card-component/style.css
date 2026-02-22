@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --color-Navy-950: hsl(233, 47%, 7%);
+    --color-Blue-950: hsl(244, 37%, 16%);
+    --color-Purple-500: hsl(277, 64%, 61%);
+    --color-main-heading-stats: hsl(0, 0%, 100%);
+    --color-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --color-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: 'Inter',sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  
+  background-color: var(--color-Navy-950);
+}
+
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1110px;
+    width: 100%;
+    background-color: var(--color-Blue-950);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 24px;
+}
+
+.stats{
+   display: flex;
+    flex-direction: column; 
+    gap: 24px;
+    margin-top: 24px;
+    list-style: none;
+}
+
+.text-container h1{
+    color: var(--color-main-heading-stats);
+    margin-bottom: 30px;
+
+}
+
+.text-container p{
+color: var(--color-main-paragraph);
+margin-bottom: 40px;
+}
+
+
+.stats-heading{
+color: var(--color-main-heading-stats);
+font-weight: 700;
+font-size: 24px;
+margin-bottom: 8px;
+}
+
+.insight{
+    color: var(--color-Purple-500);
+}
+
+
+.text-container{
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.image-container{
+     width: 100%;
+     height: 240px;
+  background-color: var(--color-Purple-500); 
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    mix-blend-mode: multiply; 
+}
+.stats-content{
+    color: var(--color-stat-headings);
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        flex-direction: row; 
+        text-align: left; 
+    }
+
+    .image-container {
+        height: auto; 
+        flex: 1 1 50%; 
+    }
+
+    .text-container {
+        flex: 1 1 50%;
+        padding: 72px; 
+        text-align: left;
+    }
+
+    .stats {
+        flex-direction: row; 
+        gap: 64px;
+        margin-top: 72px;
+    }
+
+    .text-container p { 
+        margin-bottom: 72px; 
+    }
+}
